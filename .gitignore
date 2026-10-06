@@ -1,0 +1,24 @@
+# 构建产物与中间数据（本地 `python run_all.py` 可随时重新生成）
+# 注意：questions_raw.json / fmt_*.txt / lines_*.json / images/ 里含真题原文，
+#       公开仓库不应包含，故一并忽略。
+images/
+img_map.json
+questions_raw.json
+fmt_*.txt
+lines_*.json
+raw_*.txt
+
+# 生成的单文件 HTML（含 base64 内嵌图片，约 2MB）
+*.html
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
